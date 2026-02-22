@@ -1,4 +1,5 @@
 
+// Triggering new deployment
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -43,4 +44,3 @@ function App() {
 }
 
 export default App;
-
