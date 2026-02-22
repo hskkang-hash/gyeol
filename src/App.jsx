@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider as MuiThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box } from '@mui/material';
-import { ThemeContext, ThemeProvider } from './contexts/themeContext';
+import { ThemeContext } from './contexts/themeContext';
+import ThemeProvider from './contexts/ThemeProvider.jsx';
 
 // Page Imports
 import Intro from './components/Intro';
