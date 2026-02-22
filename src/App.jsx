@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider as MuiThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { Box } from '@mui/material';
-import { ThemeContext } from './contexts/themeContext';
+import { ThemeContext } from './contexts/themeContext.js';
 import ThemeProvider from './contexts/ThemeProvider.jsx';
 
 // Page Imports
@@ -14,8 +14,8 @@ import Home from './pages/Home';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ContactUs from './pages/ContactUs';
-import Header from './components/Header'; 
-import Footer from './components/Footer'; 
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 const lightTheme = createTheme({
   palette: {
@@ -66,7 +66,7 @@ function AppContent() {
       <CssBaseline />
       <Router>
         <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }} className={`theme-${theme}`}>
-            <Header /> 
+            <Header />
             <Box component="main" sx={{ flexGrow: 1, py: 4, px: { xs: 2, md: 4 } }}>
                 <Routes>
                     <Route path="/" element={<Intro />} />
